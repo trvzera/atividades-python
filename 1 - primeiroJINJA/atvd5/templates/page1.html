@@ -1,0 +1,13 @@
+{% extends 'layout.html' %} {% block title %} Exibir nome {% endblock %} {%block
+content %}
+<h1>
+  {% for aluno, notas in lista.items() %}
+  <p>
+    {{aluno}} - {{notas}}: {% if notas >= 7 %} Aprovado {% else %} Reprovado {%
+    endif %}
+  </p>
+
+  {% endfor %}
+</h1>
+
+{% endblock %}

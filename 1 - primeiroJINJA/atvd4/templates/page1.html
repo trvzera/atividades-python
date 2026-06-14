@@ -1,0 +1,9 @@
+{% extends 'layout.html' %} {% block title %} Exibir nome {% endblock %} {%block
+content %}
+<h1>
+  {% for aluno in lista %}
+  <p>{{ loop.index }} - {{ aluno}}</p>
+  {% endfor %}
+</h1>
+
+{% endblock %}

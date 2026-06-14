@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}Página 1{% endblock %}</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+
+  <body>
+    <section>
+      <header class="glass-card">
+        <nav>
+          <ul>
+            <li><a href="{{ url_for('home') }}">Página 1</a></li>
+            <li><a href="{{ url_for('page2') }}">Página 2</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="container">
+        {% block content %}
+        <h1>Página Inical</h1>
+        <p id="main-desc">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, natus?
+          Est recusandae eum expedita culpa fugiat nostrum? Iure quod minima id
+          sit, similique libero ex, consequuntur voluptatum corporis rem velit.
+        </p>
+        {% endblock %}
+      </div>
+
+    </section>
+  </body>
+</html>

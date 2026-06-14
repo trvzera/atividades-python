@@ -1,0 +1,54 @@
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def curriculo():
+    return '''
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu curriculo</title>
+</head>
+
+<body style="font-family: Arial, Helvetica, sans-serif; background-color: #e5e5ea; padding: 0; box-sizing: border-box;">
+  <section style="height: max-content; display: flex; align-items: start; justify-content: top; flex-direction: column; background-color: #ffffff; width: 800px; padding: 30px 50px; border-radius: 15px; border: 1px solid #c2c2c2; margin: auto; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);">
+    <h1 style="font-size: 1.5rem; margin-bottom: 0px;">GIOVANNI DE CASTRO MORAIS TRIVELLATO - 17 anos</h3>
+      <h2 style="text-align: left; margin: 5px 0px; font-size: 1.1rem;">+55 (31) 9 9591-7515</h4>
+        <h3 style="text-decoration: underline; color: #0284db; font-size: 1.3rem; margin-top: 0px; font-size: 1rem; margin-bottom: 10px;">giovanni.cm.trivellato@gmail.com</h3>
+        <p>Praça José de Magalhães, 197 - Boa Vista - BH/MG</p>
+        <div style="width: 100%; margin: 10px auto; background-color: #cfcfcf; height: 2px;"></div>
+        <h4 style="font-size: 1.2rem; margin-bottom: 10px;">Objetivos:</h4>
+        <p style="margin: 0px 0px 10px 15px;">- Busco qualificação na área de informática para aperfeiçoamento do curso técnico</p>
+        <p style="margin: 0px 0px 10px 15px;">- Adquirir experiência corporativa</p>
+        <p style="margin: 0px 0px 10px 15px;">- Área de maior interesse: Desenvolvimento Web</p>
+        <h4 style="font-size: 1.2rem; margin-bottom: 10px;">Habilidades:</h4>
+        <p style="margin: 0px 0px 10px 15px;">- Instalar, configurar sistema operacional Windows</p>
+        <p style="margin: 0px 0px 10px 15px;">- Montagem, Manutenção e Limpeza de Computadores</p>
+        <p style="margin: 0px 0px 10px 15px;">- Conhecimento avançado de Hardware e Software, HTML, CSS, JavaScript e Lógica de Programação.</p>
+        <p style="margin: 0px 0px 10px 15px;">- Conhecimento em: Python, C# e MySQL.</p>
+        <p style="margin: 0px 0px 10px 15px;">- Conhecimento básico em Swift, Kotlin e Dart/Flutter.</p>
+        <p style="margin: 0px 0px 10px 15px;">- Conhecimento ferramentas Google: Docs, Planilhas, Forms, etc</p>
+        <p style="margin: 0px 0px 10px 15px;">- Domínio em edição de vídeos, imagens e modelagem 3D nos programas After Effects e Photoshop, Premiere, Canva e Blender</p>
+        <p style="margin: 0px 0px 10px 15px;">- Facilidade em trabalhos em equipe</p>
+        <p style="margin: 0px 0px 10px 15px;">- Facilidade de aprendizado</p>
+        <p style="margin: 0px 0px 10px 15px;">- Ótima comunicação verbal e escrita</p>
+        <p style="margin: 0px 0px 10px 15px;">- Bom raciocínio lógico</p>
+        <p style="margin: 0px 0px 10px 15px;">- Busco qualificação na área de informática para aperfeiçoamento do curso técnico</p>
+        <h4 style="font-size: 1.2rem; margin-bottom: 10px;">Experiência:</h4>
+        <p style="margin: 0px 0px 10px 15px;">- Experiência em empresa de informática como atendimento ao cliente, técnico (manutenção, limpeza, montagem e formatação de computadores) e video maker. (Atuando na PXT Informática como suporte técnico)</p>
+        <p style="margin: 0px 0px 10px 15px;">- Experiência com atendimento à crianças, e pessoas sem conhecimento na área, além de aprendizado rápido a novas plataformas, como Microsoft Teams, SAS, Microsoft 365 e SM. (Atuando no Colégio Nossa Senhora das Dores como suporte técnico)</p>
+  </section>
+</body>
+
+</html>
+
+
+
+'''
+
+if __name__ == '__main__':
+    app.run(debug=True)
